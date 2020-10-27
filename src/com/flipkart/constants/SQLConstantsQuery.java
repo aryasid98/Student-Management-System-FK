@@ -31,12 +31,13 @@ public class SQLConstantsQuery {
 	public static final String DELETE_STUDENT_COURSE="delete from course where courseId = ? And studentId=?";
 	
 	public static final String CHECK_CREDENTIALS="select roleId from user where username=? and password=?";
+	public static final String VIEW_PAYMENT_MODES = "select paymentId,mode from payment";
+	public static final String ADD_COURSE = "insert into catalog values(?,?,?)";
+	public static final String DELETE_COURSE = "delete from catalog where courseId=?";
 
 	
 	public static final String VIEW_CATALOG="select courseId, courseName from catalog";
 
-	public static final String VIEW_PAYMENT_MODES = "select paymentId,mode from payment";
-	public static final String ADD_COURSE = "insert into catalog values(?,?,?)";
-	public static final String DELETE_COURSE = "delete from catalog where courseId=?";
+	
 
 }
