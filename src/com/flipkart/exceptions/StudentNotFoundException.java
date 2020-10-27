@@ -9,7 +9,7 @@ public class StudentNotFoundException  extends Exception{
 		
 		public String getMessage()
 		{
-			return	"Student Not Found!!";
+			return	"Student Not Found in Log!!";
 		}
 	
 }
